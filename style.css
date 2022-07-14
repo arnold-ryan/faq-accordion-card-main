@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* - Very dark desaturated blue: hsl(238, 29%, 16%)
+- Soft red: hsl(14, 88%, 65%) */
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "Kumbh Sans", sans-serif;
+  background-color: hsl(273, 75%, 66%);
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+img {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.container {
+  width: 32rem;
+  max-width: 90rem;
+  margin-inline: auto;
+  margin-top: 14rem;
+  background-color: white;
+  border-radius: 2rem;
+}
+.faq--img {
+  position: relative;
+}
+.faq--img-desktop {
+  display: none;
+}
+.faq--img-svg1 {
+  position: absolute;
+  top: 25%;
+  right: 50%;
+  width: 75%;
+  transform: translate(50%, -75%);
+}
+.faq--img-svg2 {
+  transform: translate(17%, -5%);
+}
+.faq--texts {
+  padding: 2rem 2rem 4rem 2rem;
+}
+.faq--text {
+  padding-block: 1.4rem;
+  border-bottom: 0.1rem solid hsl(240, 5%, 91%);
+}
+.faq--title {
+  color: hsl(238, 29%, 16%);
+  text-align: center;
+  font-weight: 700;
+  font-size: 3.6rem;
+  margin-bottom: 1rem;
+}
+.faq--text-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+}
+.faq--text-title {
+  font-size: 1.3rem;
+  color: hsl(237, 12%, 33%);
+  transition: color 0.2s ease;
+}
+.faq--text-title:hover {
+  color: hsl(14, 88%, 65%);
+}
+.active-title {
+  color: hsl(238, 29%, 16%);
+  font-weight: 700;
+}
+.faq--arrow {
+  transform: rotate(180deg);
+}
+.faq--text-msg {
+  font-size: 1.2rem;
+  color: hsl(240, 6%, 50%);
+  margin-top: 1rem;
+
+  display: none;
+}
+.active-msg {
+  display: block;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 42.6rem) {
+  .faq--img {
+    display: none;
+  }
+  .faq--img-desktop {
+    display: block;
+    position: relative;
+  }
+  .faq--img-svg1 {
+    transform: translate(50%, -66%);
+  }
+  .faq--img-svg2 {
+    visibility: hidden;
+  }
+  .container {
+    width: 90%;
+    margin-inline: auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .faq--img-desktop svg {
+    position: absolute;
+  }
+  .faq--svg-dtop1 {
+    right: 14%;
+    bottom: 13%;
+  }
+  .faq--svg-dtop2 {
+    bottom: 21%;
+    right: 78%;
+  }
+  .faq--svg-dtop3 {
+    transform: scale(0.6);
+    right: -28%;
+    bottom: -50%;
+  }
+  .faq--texts {
+    padding: 6rem 8rem 8rem 0;
+  }
+  .faq--title {
+    text-align: left;
+  }
+}
