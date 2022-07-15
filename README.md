@@ -26,12 +26,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./Screen-shot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github](https://github.com/arnold-ryan/faq-accordion-card-main)
+- Live Site URL: [Live Site](https://arnold-faq-component.netlify.app)
 
 ## My process
 
