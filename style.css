@@ -1,8 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
 
-/* - Very dark desaturated blue: hsl(238, 29%, 16%)
-- Soft red: hsl(14, 88%, 65%) */
-
 *,
 *::before,
 *::after {
@@ -75,25 +72,29 @@ img {
   color: hsl(237, 12%, 33%);
   transition: color 0.2s ease;
 }
+.faq--arrow {
+  transition: transform 0.4s ease;
+}
 .faq--text-title:hover {
   color: hsl(14, 88%, 65%);
 }
-.active-title {
+.faq--text.active .faq--text-title {
   color: hsl(238, 29%, 16%);
   font-weight: 700;
 }
-.faq--arrow {
+.faq--text.active .faq--arrow {
   transform: rotate(180deg);
 }
 .faq--text-msg {
   font-size: 1.2rem;
   color: hsl(240, 6%, 50%);
   margin-top: 1rem;
-
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
 }
-.active-msg {
-  display: block;
+.faq--text.active .faq--text-msg {
+  max-height: 30rem;
 }
 
 .attribution {

@@ -44,12 +44,7 @@ Users should be able to:
 
 ### What I learned
 
-Using web responsive images can be tricky especially because I wasn't using the mobile-first workflow. I had to lookup:
-
-- how to fit content inside a div where adjusting height: 100%; property of the div came in handy.
-- how to play around with the viewport height and adjust content accordingly using e.g. max-height: 95%;
-- how to deal with overflow
-- how to add a color filter to an image. I basically used z-index and opacity to get around that but I'll have to do more semantic css research.
+- using an "active" css class to toggle changes on click gives a much simpler javascript code than adding styles in the javascript click function
 
 ### Continued development
 
@@ -62,6 +57,7 @@ I'd like to continue learning and adapting to how to use responsive images and h
 - [css tricks](https://css-tricks.com/transforms-on-svg-elements/) - transform on svg elements.
 - [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale) - scaling an svg using css transform property
 - [css tricks](https://css-tricks.com/snippets/css/fluid-typography/) - create responsive font sizes
+- [Developer Empire](https://www.youtube.com/watch?v=4qnWreynXLU&t=262s&ab_channel=DeveloperEmpire) - how to add active class to elements on click
 
 ## Author
 
